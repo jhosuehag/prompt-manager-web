@@ -1,33 +1,37 @@
-# Prompt Manager
+# 🧠 Prompt Manager
 
-Una herramienta sencilla para guardar, organizar y reutilizar tus prompts de inteligencia artificial, todo desde el navegador.
+Guardá, organizá y reutilizá tus mejores instrucciones para ChatGPT, Claude, Gemini y cualquier otra IA. Todo desde el navegador, siempre a mano.
 
-## ¿Qué puedo hacer?
+## ✨ ¿Qué podés hacer?
 
-- **Guardar prompts** — Crea tus propias instrucciones para IA y mantenlas siempre a mano.
-- **Buscar al instante** — Escribe cualquier palabra y encuentra el prompt que necesitas en segundos.
-- **Copiar con un clic** — Cada prompt tiene un botón para copiarlo al portapapeles al instante.
-- **Editar o eliminar** — Modifica lo que guardaste o borra lo que ya no uses.
-- **Selección múltiple** — Activa el modo selección y elimina varios prompts a la vez.
-- **Modo oscuro** — Cambia entre tema claro y oscuro con un solo toque.
-- **Funciona sin conexión** — Una vez que cargaste la app, podés ver tus prompts incluso sin internet.
-- **Instalable** — Podés agregarla a la pantalla de inicio de tu celular o computadora como si fuera una app normal.
+- 📝 **Crear prompts** — Escribí tus instrucciones y guardalas con un título para encontrarlas después.
+- 🔍 **Buscar al instante** — Empezá a escribir y los resultados aparecen solos.
+- 📋 **Copiar con un clic** — Un toque y el prompt ya está en tu portapapeles.
+- ✏️ **Editar o eliminar** — Modificá lo que guardaste o borrá lo que ya no uses.
+- 📦 **Selección múltiple** — Seleccioná varios prompts y eliminalos todos juntos.
+- 🌙 **Modo oscuro** — Cambiá entre claro y oscuro con un toque.
+- 📱 **Instalable** — Agregala a la pantalla de inicio de tu celu como una app de verdad.
+- 🔐 **Tu cuenta** — Iniciá sesión con email y tus prompts viajan con vos a cualquier dispositivo.
 
-## Cómo usarla
+## 🚀 ¿Cómo se usa?
 
-1. Abrí la app en tu navegador.
+1. Entrá a la app y creá tu cuenta con tu email.
 2. Tocá el botón **+** (abajo a la derecha) para crear un nuevo prompt.
-3. Escribí un título y el contenido, luego guardalo.
+3. Ponele un título, escribí el contenido y guardalo.
 4. Tocá cualquier tarjeta para ver el contenido completo.
-5. Usá el icono de **copiar** para llevar el prompt al portapapeles.
-6. Escribí en el buscador para filtrar rápidamente.
-7. En el menú superior activá el **modo selección** para eliminar varios prompts juntos.
-
-## Atajos útiles
-
-- `Ctrl + K` (o `Cmd + K` en Mac) → enfoca el buscador.
-- `Escape` → cierra la ventana de edición.
+5. Usá el icono de **copiar** para llevar el prompt al portapapeles y usalo con tu IA favorita.
 
 ---
 
-Hecho para cualquiera que use IA y quiera tener sus prompts organizados sin complicaciones.
+## 🎯 Probala ahora
+
+👉 **[https://vocal-salamander-117d9c.netlify.app](https://vocal-salamander-117d9c.netlify.app)**
+
+No necesitas instalar nada — funciona en cualquier navegador.
+
+## 📲 ¿Querés instalarla en el celular?
+
+1. Abrí la app desde Chrome o Safari.
+2. Tocá **Compartir** → **Agregar a la pantalla de inicio**.
+
+La app se va a ver y funcionar como si la hubieras descargado de la tienda, incluso sin internet.
