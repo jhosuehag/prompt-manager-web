@@ -1,88 +1,33 @@
 # Prompt Manager
 
-Aplicación web progresiva (PWA) para gestionar, organizar y reutilizar prompts de inteligencia artificial de forma rápida y eficiente.
+Una herramienta sencilla para guardar, organizar y reutilizar tus prompts de inteligencia artificial, todo desde el navegador.
 
-## ✨ Características
+## ¿Qué puedo hacer?
 
-- **CRUD completo** — Crear, editar, eliminar y visualizar prompts.
-- **Búsqueda en tiempo real** — Filtra prompts por título o contenido con acentos normalizados.
-- **Selección múltiple** — Modo selección con *long press* (móvil) o *click* en el icono checklist (escritorio) para eliminar en lote.
-- **Expansión inline** — Cada prompt se expande/colapsa con una animación suave para ver su contenido sin salir de la lista.
-- **Copiado rápido** — Botón de copia en cada tarjeta para llevar el prompt al portapapeles con un solo clic.
-- **Modo oscuro** — Alternancia entre tema claro/oscuro con persistencia en `localStorage`.
-- **Offline primero** — Service Worker con estrategia *stale-while-revalidate* y precarga de assets. Los prompts se cachean en `localStorage` para funcionar sin conexión.
-- **PWA instalable** — `manifest.json` e iconos permiten instalar la app en el dispositivo móvil o escritorio.
-- **Atajos de teclado** — `Ctrl+K` / `Cmd+K` enfoca el buscador; `Escape` cierra el modal.
+- **Guardar prompts** — Crea tus propias instrucciones para IA y mantenlas siempre a mano.
+- **Buscar al instante** — Escribe cualquier palabra y encuentra el prompt que necesitas en segundos.
+- **Copiar con un clic** — Cada prompt tiene un botón para copiarlo al portapapeles al instante.
+- **Editar o eliminar** — Modifica lo que guardaste o borra lo que ya no uses.
+- **Selección múltiple** — Activa el modo selección y elimina varios prompts a la vez.
+- **Modo oscuro** — Cambia entre tema claro y oscuro con un solo toque.
+- **Funciona sin conexión** — Una vez que cargaste la app, podés ver tus prompts incluso sin internet.
+- **Instalable** — Podés agregarla a la pantalla de inicio de tu celular o computadora como si fuera una app normal.
 
-## 🚀 Stack
+## Cómo usarla
 
-| Tecnología | Uso |
-|-----------|-----|
-| HTML5 + Tailwind CSS (CDN) | UI y estilos |
-| Supabase (JS v2) | Backend y base de datos |
-| Service Worker | Cache offline y PWA |
-| Material Symbols | Iconografía |
-| Google Fonts (Inter + JetBrains Mono) | Tipografía |
+1. Abrí la app en tu navegador.
+2. Tocá el botón **+** (abajo a la derecha) para crear un nuevo prompt.
+3. Escribí un título y el contenido, luego guardalo.
+4. Tocá cualquier tarjeta para ver el contenido completo.
+5. Usá el icono de **copiar** para llevar el prompt al portapapeles.
+6. Escribí en el buscador para filtrar rápidamente.
+7. En el menú superior activá el **modo selección** para eliminar varios prompts juntos.
 
-## 📦 Instalación
+## Atajos útiles
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/prompt-manager.git
-   cd prompt-manager
-   ```
+- `Ctrl + K` (o `Cmd + K` en Mac) → enfoca el buscador.
+- `Escape` → cierra la ventana de edición.
 
-2. Sirve la aplicación con cualquier servidor estático:
-   ```bash
-   npx serve .
-   # o
-   python3 -m http.server 8080
-   ```
+---
 
-3. Abre `http://localhost:8080` en tu navegador.
-
-> No requiere build step ni dependencias de Node. Todo se sirve desde archivos estáticos.
-
-## 🔧 Configuración
-
-La app se conecta a una instancia de Supabase. Las credenciales están en `index.html`:
-
-```js
-const SUPABASE_URL = 'https://tu-proyecto.supabase.co';
-const SUPABASE_ANON_KEY = 'tu-anon-key';
-```
-
-Crea una tabla `prompts` en Supabase con las columnas:
-
-| Columna | Tipo |
-|---------|------|
-| `id` | `uuid` (primary key, default `gen_random_uuid()`) |
-| `title` | `text` |
-| `content` | `text` |
-| `created_at` | `timestamptz` (default `now()`) |
-
-Asegúrate de habilitar **RLS** y crear una política que permita `SELECT`, `INSERT`, `UPDATE`, `DELETE` para el rol `anon` (o configura autenticación según necesites).
-
-## 📁 Estructura
-
-```
-├── index.html       # Aplicación completa (UI + lógica)
-├── manifest.json    # Configuración PWA
-├── sw.js            # Service Worker (caching offline)
-├── icon-192.png     # Icono 192x192
-├── icon-512.png     # Icono 512x512
-└── README.md
-```
-
-## 🧠 Uso
-
-1. Presiona el botón **+** (abajo a la derecha) para crear un nuevo prompt.
-2. Escribe un título y el contenido de tu prompt, luego guarda.
-3. Haz clic en una tarjeta para expandir/colapsar su contenido.
-4. Usa el icono **copy** para copiar el prompt al portapapeles.
-5. Usa el buscador (o `Ctrl+K`) para filtrar rápidamente.
-6. Activa el **modo selección** para eliminar varios prompts a la vez.
-
-## 📄 Licencia
-
-MIT
+Hecho para cualquiera que use IA y quiera tener sus prompts organizados sin complicaciones.
